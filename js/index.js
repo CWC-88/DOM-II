@@ -1,54 +1,60 @@
 // Your code goes here
 
-let one = document.getElementById("logo-heading")
+let one = document.querySelector(".logo-heading")
 one.addEventListener("mouseover",function(event){
-event.target.style.color = pink;
-})
+event.target.style.color = "pink";
+}
+)
 
-// darkmode
-let two  = document.getElementsByTagName(".body")
+console.log(one)
+
+// // darkmode
+let two  = document.querySelector("body")
 two.addEventListener("keydown",function(event){
-    event.target.style.color = white;
-    background.style.color = black;
+    event.target.style.color = "white";
+    event.target.style.background = "black";
 
 })
 
-let three  = document.getElementsByTagName("header")
-three.addEventListener("wheel",function(event){
-    event.target.style.color = green;
+let three  = document.querySelector("nav")
+three.addEventListener("mouseover",function(event){
+    event.target.style.color = "green";
 })
 
-let four  = document.getElementsByTagName("section")
-four.addEventListener("drag",function(event){
-    event.target.style.color = red;
+let four  = document.querySelector(".text-content")
+four.addEventListener("mouseover",function(event){
+    event.target.style.color = "red";
 })
 
-let five  = document.getElementById("intro")
-five.addEventListener("load",function(event){
-    event.target.style.color = blue;
-})
-let six  = document.getElementById("text-content")
-six.addEventListener("focus",function(event){
-    event.target.style.color = brown;
+let five  = document.querySelector(".intro")
+five.addEventListener("mouseover",function(event){
+    event.target.style.color = "blue";
 })
 
-let seven  = document.getElementById("img-content")
-seven.addEventListener("resize",function(event){
-    event.target.style.color = teal;
+
+
+let six  = document.querySelector(".text-content")
+six.addEventListener("mouseover",function(event){
+    event.target.style.color = "brown";
 })
 
-let eight  = document.getElementById("destination")
-eight.addEventListener("scroll",function(event){
-    event.target.style.color = rose;
+let seven  = document.querySelector(".img-content")
+seven.addEventListener("mouseover",function(event){
+    event.target.style.color = "teal";
 })
 
-let nine  = document.getElementById("btn")
-nine.addEventListener("select",function(event){
-    event.target.style.color = purple ;
+let eight  = document.querySelector(".destination")
+eight.addEventListener("mouseover",function(event){
+    event.target.style.color = "rose";
 })
 
-let ten  = document.getElementById("footer")
-ten.addEventListener("dblclick",function(event){
-  footer.style.backgroundColor = red;
+let nine  = document.querySelector(".btn")
+nine.addEventListener("mouseover",function(event){
+    event.target.style.color = "purple" ;
+})
+
+let ten  = document.querySelector(".footer")
+ten.addEventListener("mouseover",function(event){
+  event.target.style.color = "red";
 })
 
